@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: probed
+host: https://www.ureeka.biz
+note: >-
+  The ureeka.biz domain (www and apex) permanently redirects (301) to
+  https://www.zenbusiness.com/ - Ureeka no longer operates a standalone web
+  or API surface. No /.well-known/ documents are served; every probed path
+  returns the same 301 redirect to zenbusiness.com.
+documents:
+  - path: /.well-known/security.txt
+    status: 301
+    redirect: https://www.zenbusiness.com/
+  - path: /.well-known/openid-configuration
+    status: 301
+    redirect: https://www.zenbusiness.com/
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    redirect: https://www.zenbusiness.com/
+  - path: /.well-known/api-catalog
+    status: 301
+    redirect: https://www.zenbusiness.com/
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    redirect: https://www.zenbusiness.com/
+  - path: /llms.txt
+    status: 301
+    redirect: https://www.zenbusiness.com/

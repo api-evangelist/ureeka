@@ -1,7 +1,22 @@
 aid: ureeka
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ureeka.png
 name: Ureeka
-description: Ureeka is a company surfaced as a portfolio company of bullpen-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Ureeka was a community and mentorship platform for small businesses, surfaced
+  as a Bullpen Capital portfolio company. The company no longer operates a standalone
+  product - the ureeka.biz domain (www and apex) now permanently redirects (HTTP 301)
+  to zenbusiness.com, and no developer, documentation, or API surface remains. Probed
+  2026-07-21 by the API Evangelist enrichment pipeline; no API artifacts exist to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/ureeka/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +26,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Small Business
+- Mentorship
+- Community
+- Entrepreneurship
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/ureeka-domain-security.yml
 - type: Website
   url: https://www.ureeka.biz
+- type: LLMsTxt
+  url: llms/ureeka-llms.txt
